@@ -37,13 +37,13 @@ a {
 
 section{
   margin-bottom: 100px;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px;
 }
 
 nav {
   position: sticky;
   top: 6px;
-  height: 80px;
+  height: 75px;
   padding: 0 50px;
   display: flex;
   align-items: center;
