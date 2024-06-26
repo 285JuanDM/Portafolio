@@ -31,6 +31,10 @@ a {
   color: #f5f5f5;
 }
 
+section{
+  margin-bottom: 100px;
+}
+
 nav {
   position: sticky;
   top: 6px;
@@ -137,12 +141,11 @@ nav .nav-networks a {
   color: #f5f5f5;
   background-color: #333;
   transition: all 0.3s ease;
-  text-decoration: none;
-}
 
-nav .nav-networks a:hover {
-  color: #f5f5f5;
-  background-color: #43655A;
+  &:hover {
+    color: #f5f5f5;
+    background-color: #43655A;
+  }
 }
 
 .home {
@@ -167,7 +170,7 @@ nav .nav-networks a:hover {
 
 .home h4 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #f5f5f5;
   margin-bottom: 30px;
 }
@@ -470,6 +473,8 @@ nav .nav-networks a:hover {
 .about .about-text p {
   text-align: left;
   font-size: 16px;
+  font-weight: 250;
+  letter-spacing: 1px;
   color: #e6e6e6;
   margin-bottom: 20px;
   line-height: 1.6;
@@ -534,7 +539,7 @@ nav .nav-networks a:hover {
     background-size: 800%;
     border-radius: 50%;
     filter: blur(8px);
-    animation: glowing 60s linear infinite;
+    animation: glowing 50s linear infinite;
   }
 }
 
@@ -542,9 +547,13 @@ nav .nav-networks a:hover {
 footer {
   position: relative;
   background: #252525;
-  padding: 80px 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px 50px 40px;
   margin-top: 100px;
-  height: auto;
+  height: 50vh;
 }
 
 footer .start-proyect{
@@ -554,10 +563,10 @@ footer .start-proyect{
   
   position: absolute;
   background-color: #43655A;
-  padding: 30px 100px;
+  padding: 30px 50px;
   border-radius: 15px;
   width: 70%;
-  top: -32%;
+  top: -14%;
   left: 15%;
 }
 
@@ -584,6 +593,61 @@ footer .start-proyect p{
   font-size: 15px;
 }
 
+footer .footer-jdms {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .footer-jdms h2{
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+footer .footer-jdms p{
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+footer .footer-networks{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+footer .footer-networks a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.75rem;
+  padding: 20px 20px;
+  border: #f5f5f5 2px solid;
+  border-radius: 50%;
+  color: #f5f5f5;
+  transition: all 0.3s ease;
+
+  &:hover{
+    color: #252525;
+    background-color: #f5f5f5;
+  }
+}
+
+footer small{
+  color: #f5f5f5;
+  font-size: 13px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
 
 @keyframes glowing {
   0% {
