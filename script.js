@@ -8,7 +8,7 @@ const observador = new IntersectionObserver((entries) => {
             menuLink.classList.add("active");
         }
     });
-}, {rootMargin: "-45% 0% -40% 0%"});
+}, {rootMargin: "-60% 0% -40% 0%"});
 
 menuLinks.forEach(link => {
     const hash = link.getAttribute('href');
