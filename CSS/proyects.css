@@ -1,0 +1,186 @@
+
+.proyects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
+    height: calc(100vh - 81px);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .proyects h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #f5f5f5;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .proyects .cards {
+    display: grid;
+    width: 90rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    border-radius: 10px;
+    grid-gap: 15px;
+  }
+  
+  .proyects .card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-3px);
+    }
+  
+    &:hover .overlay {
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+    }
+  
+    &:hover .card-content {
+      opacity: 1;
+    }
+  }
+  
+  .proyects .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.08); 
+    transition: all 0.5s ease;
+  }
+  
+  .proyects .card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+    transform: translate(-50%, -50%);
+  }
+  
+  .proyects .card .card-content h3,
+  .proyects .card .card-content p,
+  .proyects .card .card-content a, 
+  .proyects .card .card-content .tags{
+    margin: 10px 0;
+  }
+  
+  .proyects .card .card-content h3 {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .proyects .card .card-content p {
+    font-size: 15px;
+    color: #000000;
+  }
+  
+  .proyects .card .card-content .extra{
+    font-size: 18px;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  .proyects .card .card-content .features{
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  .proyects .card .card-content a {
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    font-size: 16px;
+  
+    &:hover {
+      background-color: #888;
+    }
+  }
+  
+  .proyects .card .tags{
+    width: 100%;
+    color: black;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .proyects .card .tags span{
+    padding: 5px 10px;
+    border-radius: 80px;
+    border: 2px solid black;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 900;
+  }
+  
+  .JavaScript {
+    background-color: #efd81d;
+    color: black;
+  }
+  
+  .CSS {
+    background-color: #13a1df;
+    color: black;
+  }
+  
+  .HTML {
+    background-color: #e8542c;
+    color: black;
+  }
+  
+  
+  .proyects .item-1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    background-image: url('https://www.soyunamarca.com/wp-content/uploads/2019/02/Azurmendi-1024x619.png');
+  }
+  
+  .proyects .item-2 {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    background-image: url('https://www.soyunamarca.com/wp-content/uploads/2019/02/hameaualbert-1024x550.png');
+  }
+  
+  .proyects .item-3 {
+    grid-column: 6 / 11;
+    grid-row: 2 / 3;
+    background-image: url('https://www.soyunamarca.com/wp-content/uploads/2019/02/chipotle1-1024x551.png');
+  }
+  
+  .proyects .item-4 {
+    grid-column: 11 / 16;
+    grid-row: 1 / 3;
+    background-image: url('https://www.soyunamarca.com/wp-content/uploads/2019/02/Mugaritz-1024x616.png');
+  }

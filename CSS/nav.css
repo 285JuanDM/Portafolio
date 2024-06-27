@@ -1,0 +1,112 @@
+nav {
+    position: sticky;
+    top: 6px;
+    height: 75px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    z-index: 1000;
+  
+    animation: nav-scroll linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 200px 300px;
+  }
+  
+  @keyframes nav-scroll {
+    to {
+      background-color: rgba(51, 51, 51, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, .1);
+    }
+  }
+  
+  nav .nav-logo {
+    font-size: 2rem;
+    color: #f5f5f5;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  
+    &:hover {
+      animation: colorChange 5s infinite alternate;
+    }
+  }
+  
+  nav .logo .logo {
+    font-weight: 800;
+  }
+  
+  nav .nav-menu a,
+    .redes a {
+    &:hover {
+      color: #43655A;
+    }
+  }
+  
+  nav .nav-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  nav .nav-menu .item {
+    font-size: 1.2rem;
+    font-weight: 450;
+    position: relative;
+    transition: all 0.1s ease-in;
+  
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #43655A;
+      transition: width 0.1s ease-in-out;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: center;
+    }
+  }
+  
+  nav .nav-menu .active {
+    color: #43655A;
+  
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #43655A;
+      transition: width 0.3s;
+    }
+  }
+  
+  nav .nav-networks {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  nav .nav-networks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #f5f5f5;
+    background-color: #333;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      color: #f5f5f5;
+      background-color: #43655A;
+    }
+  }  
