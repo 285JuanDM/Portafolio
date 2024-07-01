@@ -103,3 +103,74 @@ footer {
     letter-spacing: 1px;
     text-align: center;
   }
+
+/*Responsive Code*/
+@media (width < 1000px){
+    footer .start-proyect{
+      width: 90%;
+      top: -10%;
+      left: 5%;
+    }
+    
+    footer .start-proyect p{
+      font-size: 12px;
+    }
+    
+    footer .start-proyect h2{
+      font-size: 1.3rem;
+    }
+
+    footer .footer-jdms h2{
+      font-size: 2rem;
+    }
+    
+    footer .footer-jdms p{
+      font-size: 18px;
+    }
+    
+    footer .footer-networks a{
+      width: 30px;
+      height: 30px;
+      font-size: 1.5rem;
+      padding: 15px 15px;
+    }
+    
+    footer small{
+      font-size: 12px;
+    }    
+}
+
+@media (width < 700px){
+    footer .start-proyect{
+      width: 90%;
+      top: -10%;
+      left: 5%;
+    }
+    
+    footer .start-proyect p{
+      display: none;
+    }
+    
+    footer .start-proyect h2{
+      font-size: 1.3rem;
+    }
+
+    footer .footer-jdms h2{
+      font-size: 1.2rem;
+    }
+    
+    footer .footer-jdms p{
+      font-size: 15px;
+    }
+    
+    footer .footer-networks a{
+      width: 35px;
+      height: 35px;
+      font-size: 1.1rem;
+      padding: 15px 15px;
+    }
+    
+    footer small{
+      font-size: 10px;
+    }    
+}

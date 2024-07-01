@@ -24,9 +24,8 @@
   border-radius: 50%;
   margin-bottom: 20px;
   object-fit: cover;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
+  transition: filter 1s ease-in-out, transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
 
   &:hover {
     filter: grayscale(0%);
@@ -139,5 +138,75 @@
   100% {
     background-position: 0 0;
   }
+  
+}
+
+/*Responsive Code*/
+@media (width < 1200px) {
+  .about {
+    padding-bottom: 70px;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  .about img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about .about-text h2 {
+    font-size: 3.5rem;
+  }
+
+  .about .about-text p {
+    font-size: 14px;
+  }
+
+  .about .about-text a {
+    font-size: 1rem;
+  }
+
+  .about .skills-slider {
+    font-size: 2rem;
+  }
+
+  .about .skills-slider .skill {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (width < 800px) {
+  .about .about-text{
+    align-items: center;
+  } 
+
+  .about .about-text h2 {
+    font-size: 3rem;
+  }
+
+  .about .about-text p {
+    text-align: center;
+    font-size: 14px;
+    max-width: 450px;
+  }
+
+  .about .skills-slider {
+    font-size: 2.5rem;
+  }
+
+  .about .skills-slider .skill {
+    background: transparent;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
   
 }
