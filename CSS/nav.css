@@ -29,21 +29,10 @@ nav {
     user-select: none;
     cursor: pointer;
     transition: all 0.2s linear;
-  
-    &:hover {
-      animation: colorChange 5s infinite alternate;
-    }
   }
   
   nav .logo .logo {
     font-weight: 800;
-  }
-  
-  nav .nav-menu a,
-    .redes a {
-    &:hover {
-      color: #43655A;
-    }
   }
   
   nav .nav-menu ul {
@@ -64,7 +53,6 @@ nav {
       display: block;
       width: 0;
       height: 2px;
-      background-color: #43655A;
       transition: width 0.1s ease-in-out;
       position: absolute;
       bottom: -2px;
@@ -75,8 +63,7 @@ nav {
   }
   
   nav .nav-menu .active {
-    color: #43655A;
-  
+    color: #f5f5f5;
     &::after {
       content: '';
       width: 100%;
@@ -97,6 +84,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
@@ -107,9 +95,9 @@ nav {
   
     &:hover {
       color: #f5f5f5;
-      background-color: #43655A;
+      background-color: #3B594E;
     }
-  }  
+  }
 
 /*Responsive Code*/
 @media (width < 950px) {
