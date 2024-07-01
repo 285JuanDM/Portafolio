@@ -185,6 +185,11 @@
 
 /*Responsive Code*/
 @media (width < 1450px) {
+
+  .proyects {
+    margin-bottom: 10px;
+  }
+
   .proyects .cards {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
